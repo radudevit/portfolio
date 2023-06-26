@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-image: url(bg_image.jpg);
+    background-size: cover;
+}
+
+.page-container {
+    background-color: #00000099;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-container {
+    display: flex;
+    align-items: center;
+    max-width: 725px;
+}
+
+.portfolio-content {
+    padding: 40px;
+    background-color: #FFFFFF99;
+    height: 100%;
+    width: 50%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+h2 {
+    color: #0C0822;
+    font-size: 38px;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+.separator {
+    background: #0C0822;
+    height: 1px;
+}
+
+.user-info p {
+    color: #0C0822;
+    font-size: 22px;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.user-info-item {
+    display: flex;
+    gap: 8px;
+}
+
+.user-info-item img {
+    width: 24px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.portfolio-content header {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.portfolio-message-container p {
+    color: #0C0822;
+    font-size: 22px;
+    font-family: Inter;
+    line-height: 100%;
+}
+
+.portfolio-message-container a {
+    border-radius: 8px;
+    background: #F9D65B;
+    padding: 12px 32px;
+    color: #0C0822;
+    font-size: 18px;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 150%;
+    text-decoration: none;
+}
+
+.portfolio-message-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.portfolio-content footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.avatar {
+    width: 50%;
+}
+
+.avatar img {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 725px) {
+    .portfolio-container {
+        flex-direction: column-reverse;
+    }
+
+    .portfolio-content {
+        width: 100%;
+        text-align: center;
+        border-radius: 0;
+        padding: 20px;
+    }
+
+    .user-info {
+        align-items: center;
+    }
+
+    .avatar {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .avatar img {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+    }
+}
